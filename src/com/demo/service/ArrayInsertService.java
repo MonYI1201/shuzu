@@ -3,8 +3,6 @@ package com.demo.service;
  * 数组插入类(数组移位)（付哲）
  */
 
-import com.demo.entity.Config;
-
 public class ArrayInsertService {
 	
 	/*
@@ -40,13 +38,13 @@ public class ArrayInsertService {
 	 * lenth 长度
 	 */
 	
-	public static void arryAssignments(int a[],int b[],int index, int lenth) {
+	public static void arryAssignments(int a[],int b[], int lenth,int index) {
 		for(int z = index; z < lenth; z++) {
 			b[z] = a[z];
 		}
 	}
 	
-	public static void  arryAssignments(int a[],int b[],int index, int lenth,int n) {
+	public static void  arryAssignments(int a[],int b[], int lenth,int index,int n) {
 		for(int z = index; z <= lenth; z++) {
 			b[z] = a[n];
 			n++;
