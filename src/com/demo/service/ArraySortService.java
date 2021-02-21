@@ -17,7 +17,8 @@ public class ArraySortService {
 						array[y] = array[y+1];
 						array[y+1] = z;
 					}
-				}else if(way==1) {//½µ
+				}
+				if(way==1) {//½µ
 					if(array[y]<array[y+1]){
 						int z = array[y];
 						array[y] = array[y+1];
@@ -34,15 +35,16 @@ public class ArraySortService {
 	 */
 	
 	public static void partSort(int[] array ,int startSub,int endSub, int way) {
-		for(int x=0; x<endSub; x++){
-			for(int y=startSub; y<endSub-1-x; y++){
+		for(int x=0; x<=endSub; x++){
+			for(int y=startSub; y<=endSub-1-x; y++){
 				if (way==0) {
 					if(array[y]>array[y+1]){
 						int z = array[y];
 						array[y] = array[y+1];
 						array[y+1] = z;
 					}
-				}else if(way==1) {
+				}
+				if(way==1) {
 					if(array[y]<array[y+1]){
 						int z = array[y];
 						array[y] = array[y+1];
