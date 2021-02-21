@@ -3,6 +3,8 @@ package com.demo.service;
  * 数组插入类(数组移位)（付哲）
  */
 
+import com.demo.entity.Config;
+
 public class ArrayInsertService {
 	
 	/*
@@ -12,7 +14,7 @@ public class ArrayInsertService {
 	 */
 	public static void arrayInsertService(int arr[], int index, int nums) {
 		for(int i = arr.length - 1; i >= index + nums; i--) {
-			if(index == 5) {
+			if(index == Config.NUMBER) {
 				arr[i] = arr[i - nums + 1];
 			}else {
 				arr[i] = arr[i - nums];
