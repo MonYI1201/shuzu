@@ -1,6 +1,6 @@
 package com.demo.domain;
 
-
+import com.demo.controller.Controller;
 
 /*
  * ³ÌÐòÈë¿Ú
@@ -8,8 +8,6 @@ package com.demo.domain;
 public class Test {
 	
 	public static void main(String[] args) {
-		com.demo.controller.Controller c = new com.demo.controller.Controller();
-		c.run();
-		
+		new Controller().run();	
 	}
 }
