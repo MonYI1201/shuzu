@@ -22,7 +22,7 @@ public class Controller extends Config {
 		int index = 0; 
 		index = UserService.Index();
 		
-		ArrayInsertService.arrayInsertService(Config.C, index, Config.NUMBER);//
+		ArrayInsertService.arrayInsertService(Config.C, index, Config.NUMBER);
 		
 		ArrayInsertService.arryAssignments(b, Config.C, index + Config.NUMBER - 1, index,0);
 		
